@@ -10,6 +10,7 @@
     height: 200px;
     width: 100%;
     animation: slideRight 600s infinite linear;
+    bottom: 0;
 }
 
 @keyframes slideRight {
