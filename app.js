@@ -1,7 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     const dino = document.querySelector('.dino');
     const grid = document.querySelector('.grid');
-
     let gravity = 0.9;
 
     function control(e) {
