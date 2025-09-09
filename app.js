@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function control(e) {
         if (e.code === 'Space') {
+            console.log('jump');
             jump();
         }
     }
@@ -13,7 +14,15 @@ document.addEventListener('DOMContentLoaded', () => {
     let position = 0;
 
     function jump() {
+        let count = 0;
         let timerID = setInterval(function() {
+            // move down
+            if (count === 15) {
+                clearInterval(timerID);
+                let downTimerID = setInterval(function() {
+                    console.log('going down');
+                });
+            }
 
             // move up
             position += 30;
